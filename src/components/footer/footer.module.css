@@ -1,0 +1,206 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #612332;
+}
+
+.footer h2{
+    margin-top: 35px;
+    color: #FFF4F4;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.footer span{    
+    color: #FFF4F4;
+    font-size: 20px;
+    font-weight: 700;
+    & img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.containerMapa{
+    width: 80%;
+    height: auto;
+    margin: 20px 0 60px 0;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;    
+    color: #612331;
+    font-size: 22px;
+    & img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.logo h5{    
+    font-size: 30px;
+    font-weight: bold;   
+}
+
+.logo .fimLogo{
+    color: #AC0027;
+    font-size: 35px; 
+    font-weight: bold;   
+}
+
+.infoDentalDev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.infoCRO{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;    
+    background-color: #FFF4F4;
+    gap: 20px;
+}
+
+.infoCRO span{            
+    font-size: 20px;
+    font-weight: normal;
+    color: #969696;
+}
+
+.infoCRO span:nth-child(4){
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.footer h4{
+    margin: 30px 0;
+    color: #FFF4F4;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer p{
+    margin: 0 0 30px 0;
+    color: #FFF4F4;
+    font-size: 20px;
+    
+}
+
+.footerContato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 60px 0;    
+    gap: 20px;
+}
+
+@media(max-width: 768px){
+    
+    .footer h2{
+        
+        color: #FFF4F4;
+        font-size: 25px; 
+    }
+
+    .footer span{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .footer span img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo{
+        
+        & img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .logo h5{    
+        font-size: 25px;
+        font-weight: bold;   
+    }
+    
+    .logo .fimLogo{
+        color: #AC0027;
+        font-size: 27px; 
+        font-weight: bold;   
+    }
+
+    .infoCRO span{            
+        font-size: 15px;
+        font-weight: normal;
+        color: #969696;
+        margin: 0 10px;
+    }
+    
+    .infoCRO span:nth-child(4){
+        font-weight: bold;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+
+    .footer p{
+        margin: 0 0 30px 0;
+        color: #FFF4F4;
+        font-weight: bold;
+     
+    }
+
+    .footerContato{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footerContato p{
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+
+}
+
+
+@media(max-width: 425px){
+    .footer h2{ 
+        
+        font-size: 25px; 
+    }
+
+    .footer span{
+        margin-top: 40px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footer span img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .infoCRO span{            
+        font-size: 15px;
+        font-weight: normal;
+        color: #969696;
+        margin: 0 10px;
+        text-align: center;
+    }
+
+}

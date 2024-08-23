@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Sora", sans-serif;
+  background-color: #FFF4F4;
+}
+
+a{
+  text-decoration: none;
+}

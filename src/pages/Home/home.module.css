@@ -1,0 +1,218 @@
+.divisor{
+    width: 100%;
+    height: 10px;
+    background-color: #612331;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: calc(100%vh + 10px) ;
+}
+
+.container::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-image: url('../../assets/images/home/apresentacao-image.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.container h1{
+    margin-top: 60px;
+    color: #612331;
+    & span{
+        color: #AC0027;
+        
+    }
+}
+
+.slogan{
+    margin: 5px 0 30px 0;
+    color: #612331;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.containerPacientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.pacientes{
+    border-radius: 6px;
+    width: auto;
+    box-shadow: 0 4px 10px #612331;
+}
+
+.container p{
+    color: #612331;
+    font-size: 20px;
+    width: 58%;
+    text-align: center;
+}
+
+.slogan2{
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.btnContato{
+    margin: 35px 0;
+    padding: 20px;
+    background-color: #9D0124;
+    border-radius: 6px;
+    color: #FEFEFE;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+
+.btnContato:hover{
+    background-color: #c5002e;
+}
+
+.secao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto_antesEDepois{
+    margin-top: 35px;
+    background-color: #994054;
+    padding: 10px;
+    border-radius: 6px;
+    color: #FEFEFE;
+    font-weight: 600;
+}
+
+.containerAntesEDepois{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 20px;
+    margin: 35px 0;
+}
+
+.antes_depois{
+    width: auto;
+    height: 285px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px #121212;
+}
+
+@media(max-width: 768px){
+
+    .container{        
+        height: calc(100% + 10px) ;
+    }
+
+    .pacientes{
+        width: 250px;
+    }
+
+    .pacientes:nth-child(3){
+        display: none;
+    }
+
+    .slogan2{
+        margin: 30px 0;
+    }
+
+    .btnContato{
+        margin: 30px 0;
+        padding: 18px;
+        background-color: #9D0124;
+    }
+
+    .texto_antesEDepois{
+        margin: 50px 10px;       
+       
+    }
+    
+    
+    .antes_depois{
+        width:auto;
+        height: 290px;
+    }
+
+    .antes_depois:nth-child(3){
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 425px){
+
+    .container{        
+        height: calc(100% + 10px) ;
+    }
+
+    .pacientes{
+        width: 200px;
+    }
+   
+
+    .container p{
+        color: #612331;
+        font-size: 18px;
+        width: 88%;
+        text-align: center;
+    }
+
+    .slogan2{
+        margin: 25px 0;
+    }
+
+    .pacientes:nth-child(1){
+        display: none;
+    }
+
+    .btnContato{
+        padding: 15px;
+        background-color: #9D0124;
+        
+    }
+
+    .texto_antesEDepois{
+        margin: 20px 10px;       
+        text-align: center;
+    }
+    
+    .containerAntesEDepois{
+        flex-direction: column;  
+    }
+
+    .containerAntesEDepois{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        gap: 20px;
+        margin: 35px 0;
+    }
+    
+    .antes_depois{
+        width: 85%;
+        height: auto;
+    }
+
+    .antes_depois:nth-child(3){
+        display: none;
+    }
+
+
+}
+
