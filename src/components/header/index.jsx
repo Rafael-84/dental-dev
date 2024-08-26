@@ -6,6 +6,7 @@ export function Header() {
 
 
     return (
+        <>
         <header>
             <nav className={header.menu}>
                 <Link to="/" className={header.logo}><img src={logo} alt="Logo da dental dev" /><h5>Dental<span>Dev</span></h5></Link>
@@ -33,9 +34,10 @@ export function Header() {
                     </li>
                     <li><Link to='#' >Contato</Link></li>
                 </ul>                
-            </nav>            
+            </nav>
         </header>
-
+            <div className={header.divisor}></div>            
+        </>
     )
 }
 

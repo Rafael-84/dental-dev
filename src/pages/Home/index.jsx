@@ -2,6 +2,7 @@ import { Header } from "../../components/header"
 import { Link } from "react-router-dom"
 import { Tratamentos } from "../../components/tiposTratamentos"
 import { Espaco } from "../../components/espacoEAvaliacoes"
+import { Footer } from "../../components/footer/footer"
 import home from '../Home/home.module.css'
 
 import paciente1 from '../../assets/images/home/paciente-1.png'
@@ -11,7 +12,6 @@ import paciente3 from '../../assets/images/home/paciente-3.png'
 import sorriso1 from '../../assets/images/home/antesedepois1.png'
 import sorriso2 from '../../assets/images/home/antesedepois2.png'
 import sorriso3 from '../../assets/images/home/antesedepois3.png'
-import { Footer } from "../../components/footer/footer"
 
 
 
@@ -19,8 +19,7 @@ export function Home(){
     return(
         <>
         <Header/>
-        { alert("Página em construção!") }
-        <div className={home.divisor}></div>
+             
         <main>
             <div className={home.container}>
                 <h1>Dental <span>Dev</span></h1>

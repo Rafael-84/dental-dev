@@ -97,7 +97,11 @@ header{
     border-radius: 6px;
 }
 
-
+.divisor{
+    width: 100%;
+    height: 10px;
+    background-color: #612331;
+}
 
 
 @media(max-width: 768px) {

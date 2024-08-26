@@ -1,8 +1,3 @@
-.divisor{
-    width: 100%;
-    height: 10px;
-    background-color: #612331;
-}
 
 .container{
     display: flex;
@@ -10,7 +5,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: calc(100%vh + 10px) ;
+    height: calc(100vh + 90px) ;
 }
 
 .container::before{
@@ -60,6 +55,7 @@
     font-size: 20px;
     width: 58%;
     text-align: center;
+    font-weight: medium;
 }
 
 .slogan2{

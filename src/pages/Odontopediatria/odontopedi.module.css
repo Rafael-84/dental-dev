@@ -1,5 +1,175 @@
+body{
+    --cor-texto: #612331;
+    --cor-texto-button: #FEFEFE;
+    --cor-fundo-botao: #9D0124;
+    --cor-houver-botao: #c5002e;
+    --cor-divisor:  #D4BF00;
+}
+
 .container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: calc(100vh + 90px) ;
+}
+
+.container::before{
+    content: "";
+    inset: 0;
+    background-image: url("../../assets/images/home/apresentacao-image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.container h1{
+    color: var(--cor-texto);
+    margin-top: 60px;
+}
+
+.containerPacientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+
+.pacientes{    
+    width: 290px;
+    height: 285px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px #612331;
+}
+
+.descricao{
+    margin: 60px;
+    width: 50%;
+    color: var(--cor-texto);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.botao{
+    padding: 20px 40px;
+    background-color: var(--cor-fundo-botao);
+    border-radius: 6px;
+    color: var(--cor-texto-button);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.botao:hover{
+    background-color: var(--cor-houver-botao);
+}
+
+.divisor{
+    width: 100%;
+    height: 20px;
+    background-color: var(--cor-divisor)
+}
+
+.containerpediatria{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #612331d2;
+}
+
+.containerpediatria::before{
+    content: "";
+    inset: 0;
+    background-image: url('../../assets/images/odontopediatria/fundo-odontpedia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.especialistas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.doutoras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.doutoras img{
+    width: 250px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.doutoras p, .doutoras span{
+    font-size: 20px;    
+    color: var(--cor-texto-button);
+
+}
+
+section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 90px;
+    height: 150px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+section h2{
+    margin: 60px 0;
+    color: #ecd92f;
+    font-weight: bold;
+}
+
+.titleProcedimentos{
+    margin-bottom: 80px;
+    color: #ecd92f;
+    font-size: 25px;
+}
+
+section ul ol{
+    list-style: disc;
+}
+
+section ul ol li{
+    color:var(--cor-texto-button);
+    font-weight: bold;
+    margin: 10px 0;    
+}
+
+section h3 {
+    margin: 60px 0;
+    color: #ecd92f;
+    font-size: 25px;
+}
+
+.slider{
+    width: 80%;
+    height: 500px;
+    background-color: aliceblue;
+    margin-bottom: 60px;
 }
