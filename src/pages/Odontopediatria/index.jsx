@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { Header } from '../../components/header';
-import { Tratamentos } from "../../components/tiposTratamentos"
+import destistaSuper from '../../assets/images/odontopediatria/dentista-super.png'
 import { Espaco } from "../../components/espacoEAvaliacoes"
 import { Footer } from "../../components/footer/footer"
 
@@ -62,7 +62,22 @@ export function Odontopediatria() {
                 <h3>Cada detalhe é  cuidadosamente pensado e executado de maneira excepcional, sempre em busca da naturalidade</h3>
                 <div className={pediatria.slider}>Espaço slider</div>
             </section>
-            <Tratamentos/>
+            <section className={pediatria.secaoInstrucao}>
+                <h3>A primeira consulta</h3>
+                <span>São os pequenos detalhes que fazem TODA a diferença no atendimento infantil</span>
+                <div className={pediatria.containerInstrucoes}>
+                    <div className={pediatria.instrucao}><h4>Anamnese Geral e Dirigida</h4><p>Na Primeira Consulta Odontológica, uma boa conversa com os papais, mamães e/ou responsáveis é fundamental para conhecermos detalhadamente sobre a saúde geral da criança, os hábitos diários de alimentação e higiene da família e avaliar os possíveis riscos de desenvolvimento de problemas bucais.</p></div>   
+
+                    <div className={pediatria.instrucao}><h4>Condicionamento Infantil (lúdico)</h4><p>Introduzir o ambiente do consultório odontológico de uma forma positiva e tranquila desmistifica a ideia negativa do dentista e estimula a curiosidade da criança! As crianças são extremamente sensíveis à linguagem e à comunicação não verbal e é por esse motivo que o lúdico se torna uma das formas mais eficazes de envolver a criança durante as consultas Cada caso é individualizado e cada criança receberá o condicionamento apropriado.</p></div>  
+
+                    <div className={pediatria.instrucao}><h4>Exame Clínico</h4><p>Na Primeira Consulta Odontológica, uma boa conversa com os papais, mamães e/ou responsáveis é fundamental para conhecermos detalhadamente sobre a saúde geral da criança, os hábitos diários de alimentação e higiene da família e avaliar os possíveis riscos de desenvolvimento de problemas bucais.</p></div>                     
+
+                    <div className={pediatria.instrucao}><h4>Orientação de Higiene Bucal e Técnicas de Escovação</h4><p>Através de variados recursos como brinquedos, bichinhos de pelúcia, personagens, desenho na televisão, livros, bonecos e vídeos ensinamos nossos pequenos noções sobre os cuidados com a sua saúde bucal. De forma lúdica e tranquila, conseguimos conquistar a confiança, transpor barreiras e deixar um sorriso lindo e saudável !</p></div>    
+
+                    <div className={pediatria.instrucao}><h4>Orientações aos Pais e/ou Responsáveis</h4><p>Orientações em relação à dieta, hábitos (chupeta e mamadeira), tipos de escova, creme dental, uso de flúor e outras dicas importantes que fazem da Odontopediatria uma especialidade responsável por promover hábitos saudáveis, resultando em um sorriso harmônico e livre de cáries.</p></div>   
+                    <div className={pediatria.instrucao}><img className={pediatria.dentistaPng} src={destistaSuper} alt="#" /></div>
+                </div>
+            </section>
             <Espaco/>
             <Footer/>
         </main>

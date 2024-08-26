@@ -173,3 +173,60 @@ section h3 {
     background-color: aliceblue;
     margin-bottom: 60px;
 }
+
+.secaoInstrucao{
+    display: flex;    
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.secaoInstrucao h3{
+    color: var(--cor-texto);
+    margin: 60px 0 30px 0;
+    font-weight: bold;
+    
+}
+
+.secaoInstrucao span{
+    color: var(--cor-texto);
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.containerInstrucoes{
+    display: grid;    
+    grid-template-columns: 2fr 2fr ;    
+    gap: 30px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.instrucao{
+    height:auto;
+    width: 480px;    
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #CFBBB2;
+    text-align: center;
+    & h4{
+        margin: 10px 0;
+        color: var(--cor-texto);
+        font-weight: bold;
+    }
+
+    & p{
+        color: var(--cor-texto);        
+    }
+}
+
+.dentistaPng{
+    width: 210px;
+    height: auto;
+}
+
+.instrucao:nth-child(6){
+    background-color: #AED8D3;
+}
